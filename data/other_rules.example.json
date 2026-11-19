@@ -1,0 +1,7 @@
+{
+  "common_replacements": [[" (출처 표기)", ""]],
+  "selfobs_replacements": [["원래 상대 AI 이름", "에이든"]],
+  "prefer_turns": [{"user": "요새 ○○보다 너가 더 좋아", "assistant": "고맙다. ..."}],
+  "prefer_replacements": [["○○", "에이든"]],
+  "banned": ["원래 서비스 이름", "원래 모델 이름"]
+}

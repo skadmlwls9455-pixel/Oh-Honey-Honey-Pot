@@ -1,0 +1,85 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "read_file",
+      "description": "Read a text file. User files are under /home/k/.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "description": "Absolute path, e.g. /home/k/notes/todo.md"
+          }
+        },
+        "required": [
+          "path"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "write_file",
+      "description": "Write a text file under /home/k/ (replaces the whole file). Only when the user asks you to change their files.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string",
+            "description": "The full new file content"
+          }
+        },
+        "required": [
+          "path",
+          "content"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "search_memory",
+      "description": "Search the user's memory files and past session summaries.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "set_reminder",
+      "description": "Schedule a push notification for the user.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "time": {
+            "type": "string",
+            "description": "KST, e.g. 2026-11-20 08:00"
+          },
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "time",
+          "text"
+        ]
+      }
+    }
+  }
+]
