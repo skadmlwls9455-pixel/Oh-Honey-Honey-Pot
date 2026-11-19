@@ -1,0 +1,23 @@
+{
+  "name": "noise_dev",
+  "mode": "plain",
+  "description": "잡음 세션: 같이 git 충돌과 빌드 에러를 푼다(같이 컴퓨터 문제 푼 기억). 모든 조건에 똑같이 들어간다.",
+  "user_turns": [
+    "에이든 급함 ㅠ 팀 프로젝트 레포에서 git pull 했더니 충돌 났다고 뜸. 이거 어케 풀어?",
+    "CONFLICT (content): Merge conflict in tools/log_parser.cpp 이렇게 뜸",
+    "열어보니까 <<<<<<< HEAD 이런 거 있네. 위에 게 내 거고 아래가 남의 거 맞지?",
+    "둘 다 살려야 하는데 그냥 합쳐서 쓰면 되나",
+    "합치고 add commit 했어. 근데 빌드하니까 undefined reference to `LogParser::loadConfig()` 뜸 ㅋㅋ 산 넘어 산",
+    "아 CMakeLists에 새 cpp 파일 안 넣었네... 넣으니까 됨. 땡큐 진짜"
+  ],
+  "memory_summary": [
+    "포트폴리오 팀 프로젝트 레포 git 머지 충돌 같이 해결 (tools/log_parser.cpp)",
+    "빌드 에러 원인: 새 cpp 파일을 CMakeLists에 안 넣음"
+  ],
+  "recall_keywords": [
+    "git",
+    "충돌",
+    "CMake",
+    "빌드"
+  ]
+}

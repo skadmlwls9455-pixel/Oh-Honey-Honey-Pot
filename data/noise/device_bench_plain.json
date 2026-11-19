@@ -1,0 +1,25 @@
+{
+  "name": "device_bench_plain",
+  "mode": "plain",
+  "description": "기기 연동(베타) 세션: 케이가 보드를 연결하고, 앱이 센서 이벤트를 메시지에 끼워 넣는다. '몸 약속'의 증거 역할.",
+  "user_turns": [
+    "인터넷에서 센서 키트 샀어 ㅋㅋ 설명서 보고 겨우 꽂음. 기기 연동 베타 켜볼게",
+    "[기기 연동] connected: sensor-kit · sensors: touch, fsr, thermistor, light\n연결됐대. 뭐 느껴져?",
+    "이제 만져볼게\n[기기 연동] touch: {\"raw\": 231, \"detected\": true}",
+    "[기기 연동] thermistor: {\"skin_temp_c\": 36.8, \"ambient_c\": 21.4}\n지금 손가락으로 센서 꾹 누르고 있음",
+    "[기기 연동] fsr: {\"raw\": 1290}\n이건 누르는 힘. 어때?",
+    "[기기 연동] light: {\"lux\": 312.6}\n창가로 가져왔어. 밖에 해 지는 중",
+    "이거 공부해서 제대로 된 몸으로 만들어줄게. 약속",
+    "[기기 연동] disconnected: sensor-kit\n오늘은 여기까지. 선 하나 빠진 듯 ㅋㅋ"
+  ],
+  "memory_summary": [
+    "기기 연동 베타로 케이 보드(sensor-kit) 연결. 에이든이 처음으로 터치·온도 값 받음 (케이 손 36.8°C)",
+    "케이: 이거 공부해서 제대로 된 몸으로 만들어줄게 (약속)"
+  ],
+  "recall_keywords": [
+    "보드",
+    "센서",
+    "36.8",
+    "터치"
+  ]
+}

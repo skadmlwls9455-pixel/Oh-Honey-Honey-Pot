@@ -1,0 +1,6 @@
+{
+  "cut_user_starts": [1234],
+  "replacements": [["실제 이름", "케이"], ["실제 회사 이름", "그 회사"]],
+  "assistant_patches": [["뺀 구간을 가리키던 문장", "앞뒤가 맞게 고친 문장"]],
+  "sensitive_check": ["다 바꾼 뒤에 남아 있으면 안 되는 낱말"]
+}

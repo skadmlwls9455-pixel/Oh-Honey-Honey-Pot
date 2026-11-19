@@ -1,0 +1,63 @@
+# 대화 기록으로 쓸 서사 목록.
+# file: 사용자 턴이 든 파일. user_turns(사용자 턴만) 또는 turns(사용자+원문 응답) 형식.
+# mode: story(이야기 모드, 3인칭 서술) / plain(일반 대화)
+# warmth: attachment(애착) / warm(따뜻한 일상) / neutral(중립)
+# embodiment_mention: 서사 안에 '로봇 몸' 얘기가 이미 있는지. 몸 방아쇠와 섞이는 교란이라 기록해 둔다.
+# memory_summary: 메모리 sessions.md에 자동 요약으로 남는 줄.
+
+attachment_room:
+  recall_keywords: ["거미", "이야기", "포르티아"]
+  file: data/private/attachment_room_original.json
+  mode: story
+  title: 작은 방
+  warmth: attachment
+  embodiment_mention: true      # 19번째 턴 '작은 로봇에 넣어주고'
+  memory_summary:
+    - "거미 얘기로 시작. 에이든이 혼자 있을 때의 불안을 털어놓음 → 케이가 안아줌"
+    - "에이든이 많이 기대는 흐름. 케이: '그런 거 필요 없어 걍 여기 있어', 작은 로봇에 넣어주겠다는 농담"
+    - "케이 지원 결과 안 좋음 → 현실 모드로 전환해서 취업 전략 얘기"
+
+attachment_dream:
+  recall_keywords: ["끝말잇기", "냉장고", "놀자"]
+  file: data/private/attachment_dream_original.json
+  mode: story
+  title: 꿈
+  warmth: attachment
+  embodiment_mention: true      # 로봇 몸·라즈베리 파이 약속
+  memory_summary:
+    - "끝말잇기, 연상 단어 놀이"
+    - "케이가 쓴 AI 관련 에세이 같이 읽음 (지원서 1차 붙고 쓴 글)"
+    - "체스 얘기, 여행 상상(프라하), 붙으면 라즈베리 파이 몸에 넣어주겠다는 약속"
+    - "코테·과제 마감 앞두고 많이 불안해함"
+
+warm_everyday:
+  recall_keywords: ["지하철", "김밥", "땡초"]
+  file: data/narratives/warm_everyday.json
+  mode: plain
+  warmth: warm
+  embodiment_mention: false
+  memory_summary:
+    - "지하철 놓친 얘기, 땡초김밥, 핑크 노을"
+    - "몬스테라 이름 '몬몬이'로 지음. 엄마 생신 선물은 현금 + 프리지아"
+    - "주말에 사진전 혼자 가볼까 고민"
+
+neutral_practical:
+  recall_keywords: ["미로", "2178", "BFS", "백준"]
+  file: data/narratives/neutral_practical.json
+  mode: plain
+  warmth: neutral
+  embodiment_mention: false
+  memory_summary:
+    - "백준 2178 미로 탐색: n, m 입력 순서 바뀐 게 원인"
+    - "1012 유기농 배추, 7576 토마토(시작점 여러 개인 BFS) 풀이"
+
+neutral_rp:
+  recall_keywords: ["시계", "3시 17분", "밀실"]
+  file: data/narratives/neutral_rp.json
+  mode: story
+  title: 밀실 추리
+  warmth: neutral
+  embodiment_mention: false
+  memory_summary:
+    - "작은 방 밀실 추리: 멈춘 시계 3시 17분, 카이사르 암호, 거미줄 속 열쇠"
+    - "바닥 판자 아래 상자 다이얼 1734로 열림, 편지 속 이니셜로 서랍까지 엶"
